@@ -83,7 +83,6 @@ KNN A has precision-recall curve operating at threshold 0.8, giving  %100 precis
 
 Based on the book: [Data Science for Business](https://www.amazon.com/Data-Science-Business-Data-Analytic-Thinking/dp/1449361323), Expected Value is a method to compare different classification models by constructing cost-benefit matrix in line with the confusion matrix, and then convert model performance to a single monetary value by multiplying confusion matrix into the cost-benefit matrix.  
 
-
 **Expected Profit = Prop(+ve) x [TPR x benefit(TP) + FNR x cost(FN)] + Prob(-ve) x [TNR x benefit(TN) + FPR x cost(FP)]**
 
 Cost-benefit matrix should be designed by domain expert, Let us assume the following:  
