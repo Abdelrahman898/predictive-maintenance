@@ -36,6 +36,12 @@ Text files contain simulated aircraft engine run-to-failure events, operational 
 
 ### Results
 
+**NOTE:**
+
+- `B`: Before Feature Engineering
+
+- `A`: After Feature Engineering
+
 #### 1. Regression
 
 In accordance with our analysis in the data exploratory phase, non-linear regression models like Polynomial, Random Forest, LightGBM and XGBoost performed better than linear model. **xgboost** clearly outperformed other models scoring RMSE of 16.095827 cycles, i.e. the model predicts TTF within average error range of ±16 cycles.
