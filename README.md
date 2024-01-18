@@ -36,13 +36,13 @@ Text files contain simulated aircraft engine run-to-failure events, operational 
 
 ### Results
 
-#### Regression
+#### 1. Regression
 
 In accordance with our analysis in the data exploratory phase, non-linear regression models like Polynomial, Random Forest, LightGBM and XGBoost performed better than linear model. **xgboost** clearly outperformed other models scoring RMSE of 16.095827 cycles, i.e. the model predicts TTF within average error range of ±16 cycles.
 
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/regressionplot.png)
 
-#### Binary Classification
+#### 2. Binary Classification
 
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclassplot.png)
 
@@ -58,11 +58,12 @@ In accordance with our analysis in the data exploratory phase, non-linear regres
 
 * The GaussianNB B algorithm has the highest AUC-ROC with 0.9877,  KNN B comes second with 0.9845.
 
+KNN A has precision-recall curve operating at threshold 0.8, giving  %100 precision and %60 recall, targeting %17 of the engines.
+
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclass_knn.png)
 
-* KNN A has precision-recall curve operating at threshold 0.8, giving  %100 precision and %60 recall, targeting %17 of the engines.
 
-#### Multiclass Classification
+#### 3. Multiclass Classification
 
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/muliclassplot.png)
 
