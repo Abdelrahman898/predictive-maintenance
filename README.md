@@ -103,3 +103,13 @@ engines that need maintenance but not selected by the model.
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclassprofit.jpg)
 
 **GaussianNB B** and **KNN B** has the best profit per engine (USD 69K per engine) if the company has the capacity to maintain **%31** of the engines per period.
+
+### Summary and Next Steps
+
+- The project tried to answer three essential questions in predictive maintenance: When an engine will fail? Which engines will fail in this period? How better could maintenance be scheduled? By applying machine leaning  regression, binary classification, and multiclass classification algorithms respectively, to historical data of engines sensors, the project was able to provide some suggestions responding to the problem.
+
+- Since predicting TTF is critical to all kinds of modeling performed in this project, more work is required to enhance  regression  performance.  This  could be by fixing data (outliers, resampling  etc.), trying  other models.
+
+- Features selection and dimensionality reduction techniques  should  also be utilized to enhance  models performance and speed.
+
+- Finally, the selected model in each category should be deployed for online accessibility. 
