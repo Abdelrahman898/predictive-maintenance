@@ -1,5 +1,7 @@
 # predictive-maintenance
 
+This predictive maintenance template focuses on the techniques used to predict when an in-service machine will fail, so that maintenance can be planned in advance. Airlines are interested in predicting engines failures in advance to enhance operations and reduce flight delays. Observing engine's health and condition through sensors and telemetry data is assumed to facilitate this type of maintenance by predicting Time-To-Failure (TTF) of in-service engine. Consequently, maintenance work could be planned according to TTF predictions instead of complement costly time-based preventive maintenance.
+
 ![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/engine.jpg)
 
 ### Problem
@@ -28,6 +30,8 @@ Text files contain simulated aircraft engine run-to-failure events, operational 
 **Training Data:** The aircraft engine run-to-failure data. [Download trianing data](https://azuremlsamples.azureml.net/templatedata/PM_train.txt) 
 **Test Data:** The aircraft engine operating data without failure events recorded. [Download test data](https://azuremlsamples.azureml.net/templatedata/PM_test.txt)
 **Ground Truth Data:** The true remaining cycles which have TTF for each engine in the [Download Truth data](https://azuremlsamples.azureml.net/templatedata/PM_truth.txt)
+
+For better understanding of the data, please refer to the [Link](https://gallery.azure.ai/Experiment/Predictive-Maintenance-Step-2A-of-3-train-and-evaluate-regression-models-2) provided by Microsoft.
 
 **Labels:**
 * `Regression:` Time-to-Failure (TTF), for each cycle/engine, is the number cycles between that cycle and last cycle of the engine in the training data.
