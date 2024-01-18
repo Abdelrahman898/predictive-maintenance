@@ -1,5 +1,7 @@
 # predictive-maintenance
 
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/engine.jpg)
+
 ### Problem
 
 Failure prediction is a major topic in predictive maintenance in many industries. Airlines are particularly interested in predicting equipment failures in advance so that they can enhance operations, cut cost of time-based preventive maintenance, and reduce flight delays.
@@ -38,7 +40,11 @@ Text files contain simulated aircraft engine run-to-failure events, operational 
 
 In accordance with our analysis in the data exploratory phase, non-linear regression models like Polynomial, Random Forest, LightGBM and XGBoost performed better than linear model. **xgboost** clearly outperformed other models scoring RMSE of 16.095827 cycles, i.e. the model predicts TTF within average error range of ±16 cycles.
 
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/regressionplot.png)
+
 #### Binary Classification
+
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclassplot.png)
 
 * All of the binary classifiers except Logistic Regression showed better performance metrics without the addition of new features.  
 
@@ -52,9 +58,13 @@ In accordance with our analysis in the data exploratory phase, non-linear regres
 
 * The GaussianNB B algorithm has the highest AUC-ROC with 0.9877,  KNN B comes second with 0.9845.
 
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclass_knn.png)
+
 * KNN A has precision-recall curve operating at threshold 0.8, giving  %100 precision and %60 recall, targeting %17 of the engines.
 
 #### Multiclass Classification
+
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/muliclassplot.png)
 
 - Random Forest A outperforms all other models in the two graphs above.
 - Random Forest A and KNN B perform the best in terms of micro ROC AUC.
@@ -65,6 +75,7 @@ In accordance with our analysis in the data exploratory phase, non-linear regres
 ### Expected Profit
 
 Based on the book: [Data Science for Business](https://www.amazon.com/Data-Science-Business-Data-Analytic-Thinking/dp/1449361323), Expected Value is a method to compare different classification models by constructing cost-benefit matrix in line with the confusion matrix, and then convert model performance to a single monetary value by multiplying confusion matrix into the cost-benefit matrix.  
+
 
 **Expected Profit = Prop(+ve) x [TPR x benefit(TP) + FNR x cost(FN)] + Prob(-ve) x [TNR x benefit(TN) + FPR x cost(FP)]**
 
@@ -79,5 +90,6 @@ engines that are OK but selected by the model.
 - False Negative (FN) has cost of USD -200K:
 engines that need maintenance but not selected by the model.
 
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/binclassprofit.jpg)
 
 **GaussianNB B** and **KNN B** has the best profit per engine (USD 69K per engine) if the company has the capacity to maintain **%31** of the engines per period.
