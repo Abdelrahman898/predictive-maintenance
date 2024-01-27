@@ -50,7 +50,7 @@ For better understanding of the data, please refer to the [Link](https://gallery
 
 In accordance with our analysis in the data exploratory phase, non-linear regression models like Polynomial, Random Forest, LightGBM and XGBoost performed better than linear model. **xgboost** clearly outperformed other models scoring RMSE of 16.095827 cycles, i.e. the model predicts TTF within average error range of ±16 cycles.
 
-![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/regressionplot.png)
+![alt tag](https://github.com/Abdelrahman898/predictive-maintenance/blob/main/image/newplot.png)
 
 #### 2. Binary Classification
 
